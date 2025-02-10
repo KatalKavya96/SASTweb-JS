@@ -9,12 +9,20 @@ html {
     right: 0;
     padding: 2rem 0;
     z-index: 100;
+    
+    
 }
 
 .header-content {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(200px);
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px 0px rgba(250, 250, 250, 0.3); /* Subtle shadow */
 }
 
 .main-nav ul {
@@ -57,7 +65,7 @@ html {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 6rem 0;
+    padding: 0rem 0;
 }
 
 .hero .subtitle {
@@ -120,10 +128,12 @@ body {
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    margin-right: 5rem;
+    margin: 0 0;
+    padding: 0.5rem 2rem;
+    /* margin-right: 10rem; */
+    margin-left: 2rem;
     width: 100%;
+    position: absolute;
 }
 
 @media (max-width: 768px) {
@@ -583,7 +593,87 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* This creates the parallax effect */
+    background-attachment: fixed;
+}
+
+
+.black_space{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.black_space video{
+  width: 100%;
+  height: 100%;
+  /* border: 5px solid white; */
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.events{
+  margin-top: 15%;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.01vw;
+  
+
+}
+
+.card{
+
+  width: 25%;
+  height: 45%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 5px;
+  gap: 2vh;
+
+
+}
+
+.card img{
+  width: 95%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5%;
+
+}
+
+.eventsbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.eventsbg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card h2{
+
+  font-size: 1em;
+  font-weight: 400;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(200,200,200,0.9) ;
+
 }
 
 
