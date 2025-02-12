@@ -759,3 +759,50 @@ a {
 
 
 }
+
+
+.main-nav .nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+
+@media (max-width: 768px) {
+  
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      margin: 1rem 0;
+  }
+}
+
+.project{
+
+  height: 100vh;
+  width: 100%;
+  background-color: grey;
+
+
+}
+
+.project img{
+
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+
+}
