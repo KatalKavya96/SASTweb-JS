@@ -320,7 +320,11 @@ a {
     rotate: 180deg;
 }
 
+/* .video-section .video{
 
+  position: fixed;
+
+} */
 
 /* Stats container styles */
 .stats-container {
@@ -589,7 +593,7 @@ a {
   .fixed {
     width: 100%;
     height: 500px;
-    background-image: url("assets/helm.jpg");
+    background-image: url("./assets/helm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

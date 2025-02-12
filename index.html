@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAST</title>
     <link rel="stylesheet" href="SAST Landing/style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
     <header class="header">
@@ -22,6 +24,7 @@
               <ul class="nav-links">
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#space-service">SAST Services</a></li>
+                  <li><a href="#newsletter">Newsletter</a></li>
                   <li><a href="#products">Products</a></li>
                   <li><a href="/SAST Landing/events.html">Events</a></li>
                   <li><a href="./SAST Landing/projects.html">Projects</a></li>
@@ -147,10 +150,37 @@
             </div>
           </section>
 
-          <div class="fixed"></div>
+          <div class="w-full h-screen bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('/SAST Landing/assets/helm.jpg');">
+            
+          </div>
 <main>
     
 </main>
+
+<hr class="opacity-15"><br><br>
+
+      <form class="w-full h-60 m5">
+        <div class="news flex justify-evenly ">
+          <div class="flex flex-col gap-8">
+            <div class="text-4xl font-bold w-150 ">SUBSCRIBE TO OUR SAST NEWSLETTER</div>
+            <div class="h-10 w-50 border border-red-800 text-s font-bold flex justify-center items-center opacity-80 rounded hover:bg-red-800 transition duration-500">READ NOW</div>
+          </div>
+
+          <div class="h-50 w-200  flex flex-col justify-center gap-8 p-4">
+            <h3 class="text-l font-lighter">SUBSCRIBE AND NEVER MISS OUT ON WHAT WE’RE UP TO.</h3>
+            <input class="h-10 w-166 text-xl border-b-2 border-red-800 font-bold" type="email" placeholder="EMAIL ADDRESS" name="email" required>
+            <div class="gap-5 w-full flex jus-between">
+              <input class="h-10 w-90 text-xl border-b-2 border-red-800 font-bold" type="text" placeholder="FIRST NAME" name="firstname" required>
+              <input class="h-10 w-90 text-xl border-b-2 border-red-800 font-bold" type="text" placeholder="LAST NAME" name="lastname" required>
+              <input class="border border-red-800 h-10 w-32 hover:bg-red-800 transition duration-500 rounded font-bold opacity-80" type="submit" value="SUBSCRIBE" name="submit">
+            </div>
+            <p class="text-xs font-lighter">You must be 13 years or older to opt-in to SAST emails.</p>
+          </div>
+        </div>
+      </form>
+
+<br><hr class="opacity-18">
+
 
 
           <section class="space-section">
