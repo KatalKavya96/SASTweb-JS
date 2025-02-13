@@ -22,7 +22,7 @@ html {
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(200px);
     border-radius: 2px;
-    box-shadow: 1px 1px 10px 0px rgba(250, 250, 250, 0.3); /* Subtle shadow */
+    box-shadow: 1px 1px 10px 0px rgba(250, 250, 250, 0.3);
 }
 
 .main-nav ul {
@@ -73,6 +73,17 @@ html {
     margin-bottom: 1rem;
     max-width: 400px;
     line-height: 1.5;
+    animation:glowup 10s ease-in-out infinite;
+}
+
+@keyframes glowup{
+
+  0%{opacity:0;}
+  30%{opacity:0.3;}
+  60%{opacity:0.6;}
+  90%{opacity:0.9;}
+  100%{opacity:1;}
+
 }
 
 .hero h1 {
@@ -228,7 +239,13 @@ a {
     margin-left: 10rem;
     margin-right: 10rem;
     text-align:center;
-    opacity: 0.8;
+    opacity: 0.7;
+    transition:opacity 250ms;
+}
+.space-text:hover{
+
+  opacity: 0.9;
+
 }
 
 
@@ -346,7 +363,16 @@ a {
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.4;
+    opacity: 0.8;
+    transition:opacity 250ms;
   }
+
+  .stats-title:hover{
+
+    opacity: 1;
+
+  }
+
   
   .stats-grid {
     display: flex;
@@ -372,9 +398,16 @@ a {
     font-size: 1rem;
     margin-top: 0.5rem;
     opacity: 0.9;
+    transition:opacity 250ms;
+  }
+
+  .stat-label:hover{
+
+    opacity: 1;
+
   }
   
-  /* Responsive adjustments */
+ 
   @media (min-width: 769px) {
     .stats-container {
         padding-left: 0;
@@ -490,7 +523,11 @@ a {
     text-decoration: none;
     transition: all 0.3s ease;
     gap: 0.5rem;
+    scale:1;
+    transition:scale 400ms;
   }
+
+ 
   
   .cta-button .arrow {
     transition: transform 0.3s ease;
@@ -498,13 +535,15 @@ a {
   
   .cta-button:hover {
     color: #60A5FA;
+    scale: 1.05;
+
   }
   
   .cta-button:hover .arrow {
     transform: translateX(5px);
   }
   
-  /* Responsive Design */
+
   @media (min-width: 768px) {
     .content {
       padding-left: 10%;
@@ -524,7 +563,7 @@ a {
     }
   }
   
-  /* Animation */
+  
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -556,12 +595,27 @@ a {
     text-align: center;
     color: rgba(255, 255, 255, 0.1);
     margin: 0;
+    transition:color 250ms;
+    
+  }
+
+  .space-section .space-heading:hover{
+
+    color: rgba(255, 255, 255, 0.4);
+
   }
 
   .space-section .space-heading span {
     color: white;
     opacity: 0.4;
     font-size: 120px;
+    transition:opacity 250ms;
+  }
+
+  .space-section .space-heading span:hover{
+
+    opacity:1;
+
   }
 
   .space-section .cta-button {
@@ -585,7 +639,7 @@ a {
 
   
 
-  .fixed {
+  /* .fixed {
     width: 100%;
     height: 500px;
     background-image: url("./assets/helm.jpg");
@@ -593,7 +647,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 
 .black_space{
