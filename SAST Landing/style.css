@@ -320,11 +320,6 @@ a {
     rotate: 180deg;
 }
 
-/* .video-section .video{
-
-  position: fixed;
-
-} */
 
 /* Stats container styles */
 .stats-container {
@@ -809,4 +804,17 @@ a {
   width: 100%;
   object-fit: cover;
 
+}
+
+.vbar{
+
+  opacity: 0.2;
+  box-shadow: 4px 4px 40px 8px rgb(255,255,255);
+  width: 100%;
+
+}
+
+footer {
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.05);
 }
