@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events-SAST</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
 
@@ -34,9 +35,18 @@
         </div>
     </header>
 
-    <section class="eventssec">
+    <section class="eventssec h-320 flex flex-col  items-center border-5 border-white-800 ">
+
+        <div class=" h-18 w-200 rounded-3xl flex justify-evenly items-center" style="margin-top: 11%; background-color: rgb(255,255,255,0.08); ">
+            <button class="rounded w-30 h-10 cursor-pointer" onclick="filterEvents('all')">All Events</button>
+            <button class="rounded w-30 h-10 cursor-pointer" onclick="filterEvents('past')">Past Events</button>
+            <button class="rounded w-35 h-10 cursor-pointer" onclick="filterEvents('ongoing')">Ongoing Events</button>
+            <button class="rounded w-30 h-10 cursor-pointer" onclick="filterEvents('future')">Future Events</button>
+        </div>
+
+
         <div class="events">
-            <div class="card">
+            <div class="card" data-date="2025-02-19">
                 <div class="card-content">
                     <div class="alignerevent">
                     <img src="assets/bharatmp.jpeg" alt="BharatMP" class="card-img">
@@ -51,8 +61,9 @@
                     </div>
                 </div>
             </div>
+            
 
-            <div class="card">
+            <div class="card" data-date="2024-01-05">
                 <div class="card-content">
                     <div class="alignerevent">
                         <img src="assets/DamruExhibit.jpeg" alt="Damru Exhibit" class="card-img">
@@ -67,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-date="2024-01-05">
                 <div class="card-content">
                     <div class="alignerevent">
                         <img src="assets/Onboarding.jpeg" alt="Onboarding" class="card-img">
@@ -81,8 +92,9 @@
                     </div>
                 </div>
             </div>
+            
 
-            <div class="card">
+            <div class="card" data-date="2025-02-13">
                 <div class="card-content">
 
                     <div class="alignerevent">
@@ -99,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-date="2024-01-05">
                 <div class="card-content">
                     <div class="alignerevent">
                         <img src="assets/Tsuchinshan.jpeg" alt="Tsuchinshan" class="card-img">
@@ -115,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-date="2024-01-05">
                 <div class="card-content">
                     <div class="alignerevent">
                         <img src="assets/offlaunch.jpeg" alt="Launch" class="card-img">
@@ -148,6 +160,26 @@
             });
         });
 
+    </script>
+    <script>
+        function filterEvents(type) {
+            const currentDate = new Date().toISOString().split('T')[0];
+            document.querySelectorAll('.card').forEach(card => {
+                const eventDate = card.getAttribute('data-date');
+                if (
+                    type === 'all' ||
+                    (type === 'past' && eventDate < currentDate) ||
+                    (type === 'ongoing' && eventDate === currentDate) ||
+                    (type === 'future' && eventDate > currentDate)
+                ) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        window.onload = () => filterEvents('all');
     </script>
     
 </body>
