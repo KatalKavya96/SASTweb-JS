@@ -32,3 +32,6 @@ video.addEventListener('mouseenter', () => {
 video.addEventListener('mouseleave', () => {
   video.pause();
 });
+
+
+
