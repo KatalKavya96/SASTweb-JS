@@ -140,56 +140,127 @@
             </div>
         </div>
       </section>
-   <div class="fixed bottom-5 right-5 flex flex-col items-end z-50">
-  <button onclick="toggleChat()"
-    class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full shadow-xl transform transition hover:scale-105 hover:from-blue-500 hover:to-indigo-500">
-     <img src="./assets/Cartoon Style Robot.jpg" alt="" class="w-10 h-10 rounded-lg">
+ 
+<div class="fixed bottom-5 right-5 flex flex-col items-end z-50">
+
+  <button 
+    onclick="toggleChat()" 
+    class="flex items-center gap-2 px-4 py-2 
+           bg-gradient-to-r from-blue-600 to-indigo-600 
+           text-white rounded-full shadow-xl transform 
+           transition hover:scale-105 
+           hover:from-blue-500 hover:to-indigo-500"
+  >
+    <img src="./assets/Cartoon Style Robot.jpg" alt="" class="w-10 h-10 rounded-lg">
+    <!-- <img src="./assets/Cartoon Style Robot.jpg" alt=""> -->
   </button>
 
-  <div id="chatBoxContainer"
-    class="hidden w-96 bg-gradient-to-b from-gray-900 to-black border border-gray-700 rounded-lg shadow-2xl mt-3 p-4 text-white relative">
-    <button onclick="toggleChat()"
-      class="absolute top-3 right-3 text-gray-400 hover:text-white transition text-xl font-bold">
+
+  <div 
+    id="chatBoxContainer"
+    class="hidden w-96 border border-gray-700 rounded-lg shadow-2xl mt-3 p-4 text-white relative 
+           bg-black bg-opacity-50 backdrop-blur-sm 
+           transition-all transform duration-300 ease-in-out"
+  >
+
+    <button 
+      onclick="toggleChat()" 
+      class="absolute top-3 right-3 text-gray-400 hover:text-white transition text-xl font-bold"
+    >
       ✕
     </button>
+
+
     <h2 class="text-center text-xl font-semibold tracking-wider uppercase mb-3">
       SAST Chatbot
     </h2>
-    <!-- Increased space between replies using space-y-3 -->
-    <div id="chatBox"
-      class="h-72 overflow-y-auto border border-gray-700 rounded p-3 space-y-3 text-sm bg-gray-800 bg-opacity-50">
+
+  
+    <div 
+      id="chatBox"
+      class="h-72 overflow-y-auto border border-gray-700 rounded p-3 space-y-3 text-sm 
+             bg-gray-800 bg-opacity-50"
+    >
     </div>
+
+
     <div class="mt-4">
       <p class="font-bold mb-2 text-sm uppercase tracking-wide">
         Select a question:
       </p>
       <div class="grid grid-cols-2 gap-2">
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('Where can I purchase official SAST gear?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('Where can I purchase official SAST gear?')"
+        >
           Where can I purchase official SAST gear?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('What does SAST stand for?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('What does SAST stand for?')"
+        >
           What does SAST stand for?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('How do I become a SAST member?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('How do I become a SAST member?')"
+        >
           How do I become a SAST member?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('What rocket engines do you use?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('What rocket engines do you use?')"
+        >
           What rocket engines do you use?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('What is your vision for space travel?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('What is your vision for space travel?')"
+        >
           What is your vision for space travel?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('Where can I find launch schedules?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('Where can I find launch schedules?')"
+        >
           Where can I find launch schedules?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('How can I partner with SAST?')">
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('How can I partner with SAST?')"
+        >
           How can I partner with SAST?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('How can I partner with SAST?')">
-          does sast offer internships or job opportunities
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('Does SAST offer internships or job opportunities?')"
+        >
+          Does SAST offer internships?
         </button>
-        <button class="px-3 py-2 rounded-lg shadow bg-gradient-to-r from-gray-500 to-gray-600 hover:from-gray-400 hover:to-gray-500 transition" onclick="sendMessage('How can I partner with SAST?')">
-          how can i stay updated on sast's latest developments
+        <button 
+          class="px-3 py-2 rounded-lg shadow 
+                 bg-gradient-to-r from-gray-500 to-gray-600 
+                 hover:from-gray-400 hover:to-gray-500 transition"
+          onclick="sendMessage('How can I stay updated on SAST\'s latest developments?')"
+        >
+        <!-- <img src="assets/userimg.png" alt="" class="w-8 h-8 rounded-full border-2 border-green-300> -->
+          Stay updated on SAST
         </button>
       </div>
     </div>
@@ -201,7 +272,16 @@
 
   function toggleChat() {
     const box = document.getElementById('chatBoxContainer');
+
     box.classList.toggle('hidden');
+
+    if (!box.classList.contains('hidden')) {
+      box.classList.remove('opacity-0');
+      box.classList.add('opacity-100');
+    } else {
+      box.classList.remove('opacity-100');
+      box.classList.add('opacity-0');
+    }
     if (!greeted && !box.classList.contains('hidden')) {
       greeted = true;
       greetUser();
@@ -210,31 +290,47 @@
 
   function greetUser() {
     const chatBox = document.getElementById('chatBox');
-    chatBox.innerHTML += 
-      `<div class="flex justify-start">
-        <div class="max-w-xs bg-gradient-to-r from-blue-200 to-blue-300 text-gray-800 p-3 rounded-lg">
+    chatBox.innerHTML += `
+      <div class="flex items-start space-x-2">
+        <!-- Bot Avatar -->
+        <img src="./assets/Cartoon Style Robot.jpg" alt="Bot" class="w-8 h-8 rounded-full border-2 border-blue-300" />
+        <!-- Bot Bubble -->
+        <div class="relative max-w-xs bg-gradient-to-r from-blue-200 to-blue-300 text-gray-800 p-3 rounded-lg">
+          <!-- Speech arrow -->
+          <div class="absolute top-2 -left-2 w-0 h-0 border-r-8 border-r-blue-200 border-t-8 border-t-transparent border-b-8 border-b-transparent"></div>
           <p class="text-sm"><strong>Bot:</strong> Hello, space explorer! Welcome to SAST. Please select one of the questions below.</p>
         </div>
-      </div>`;
+      </div>
+    `;
     chatBox.scrollTop = chatBox.scrollHeight;
   }
 
   function sendMessage(userInput) {
     const chatBox = document.getElementById('chatBox');
     const inputNormalized = userInput.replace(/[?.,]/g, '').toLowerCase();
+    
 
-    chatBox.innerHTML += 
-      `<div class="flex justify-end">
-        <div class="max-w-xs bg-gradient-to-r from-green-200 to-green-300 text-gray-800 p-3 rounded-lg">
+  
+    chatBox.innerHTML += `
+      <div class="flex items-center justify-end space-x-2">
+        <div class="relative max-w-xs bg-gradient-to-r from-green-200 to-green-300 text-gray-800 p-3 rounded-lg">
+          <!-- Speech arrow -->
+          <div class="absolute top-2 -right-2 w-0 h-0 border-l-8 border-l-green-200 border-t-8 border-t-transparent border-b-8 border-b-transparent"></div>
           <p class="text-sm"><strong>You:</strong> ${userInput}</p>
         </div>
-      </div>`;
-    chatBox.innerHTML += 
-      `<div id="loadingBubble" class="flex justify-start">
-        <div class="max-w-xs bg-gradient-to-r from-blue-200 to-blue-300 text-gray-800 p-3 rounded-lg">
+        <!-- User Avatar (placeholder or your own) -->
+        <img src="https://via.placeholder.com/40" alt="User" class="w-8 h-8 rounded-full border-2 border-green-300" />
+      </div>
+    `;
+    chatBox.innerHTML += `
+      <div id="loadingBubble" class="flex items-start space-x-2">
+        <img src="./assets/Cartoon Style Robot.jpg" alt="Bot" class="w-8 h-8 rounded-full border-2 border-blue-300" />
+        <div class="relative max-w-xs bg-gradient-to-r from-blue-200 to-blue-300 text-gray-800 p-3 rounded-lg">
+          <div class="absolute top-2 -left-2 w-0 h-0 border-r-8 border-r-blue-200 border-t-8 border-t-transparent border-b-8 border-b-transparent"></div>
           <p class="text-sm"><strong>Bot:</strong> <span class="dots-loading"></span></p>
         </div>
-      </div>`;
+      </div>
+    `;
     chatBox.scrollTop = chatBox.scrollHeight;
 
     setTimeout(() => {
@@ -242,32 +338,33 @@
       if (loadingElement) {
         loadingElement.remove();
       }
-      chatBox.innerHTML += 
-        `<div class="flex justify-start">
-          <div class="max-w-xs bg-gradient-to-r from-blue-200 to-blue-300 text-gray-800 p-3 rounded-lg">
+      chatBox.innerHTML += `
+        <div class="flex items-start space-x-2">
+          <img src="./assets/Cartoon Style Robot.jpg" alt="Bot" class="w-8 h-8 rounded-full border-2 border-blue-300" />
+          <div class="relative max-w-xs bg-gradient-to-r from-blue-200 to-blue-300 text-gray-800 p-3 rounded-lg">
+            <div class="absolute top-2 -left-2 w-0 h-0 border-r-8 border-r-blue-200 border-t-8 border-t-transparent border-b-8 border-b-transparent"></div>
             <p class="text-sm"><strong>Bot:</strong> ${getResponse(inputNormalized)}</p>
           </div>
-        </div>`;
+        </div>
+      `;
       chatBox.scrollTop = chatBox.scrollHeight;
     }, 1500);
   }
-
   function getResponse(input) {
     const responses = {
-      "where can i purchase official SAST Merchandise": "Visit our official store page to explore and purchase the latest SAST gear.",
+      "where can i purchase official sast gear": "Visit our official store page to explore and purchase the latest SAST gear.",
       "what does sast stand for": "SAST stands for Society for Astrophysics and Space Technology, dedicated to advanced space solutions.",
-      "how do i become a sast member": "Sign up on our website and tap on join now button then fill the form.",
-      // "what rocket engines do you use": "We utilize reusable rocket engines with next-gen thrust and efficiency to lower space travel costs.",
-      "what is your vision for space travel": "To Build and Innovate Space Technology Products and use them for Space Exploration",
+      "how do i become a sast member": "Sign up on our website and tap on 'Join Now' to fill out the membership form.",
+      "what rocket engines do you use": "We utilize reusable rocket engines with next-gen thrust and efficiency to lower space travel costs.",
+      "what is your vision for space travel": "Our vision is to build and innovate space technology products for comprehensive exploration of the cosmos.",
       "where can i find launch schedules": "Check our Launch Schedule page for upcoming missions, dates, and live countdowns.",
-      "how can i partner with sast": "Connect with us through mail or social media for further information",
-      "does sast offer internships or job opportunities": "Yes, SAST offers internships and career opportunities for students and professionals passionate about space technology. Visit our Careers page for current openings.",
-      "how can i stay updated on sast's latest developments": "Follow us on our social media platforms and subscribe to our newsletter for the latest news, mission updates, and breakthroughs."
+      "how can i partner with sast": "Connect with us through email or social media for partnership opportunities.",
+      "does sast offer internships or job opportunities": "Yes, SAST offers internships and career opportunities for those passionate about space technology. Visit our Careers page for openings.",
+      "how can i stay updated on sast's latest developments": "Follow us on social media and subscribe to our newsletter for the latest news and mission updates."
     };
     return responses[input] || "Sorry, I don't understand that question.";
   }
 </script>
-
 
 
 </body>
