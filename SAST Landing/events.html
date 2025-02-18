@@ -29,6 +29,8 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="team.html">Team</a></li>
+                    <li class="text-s"><a href="merch.html">Shop</a></li>
+
                 </ul>
             </nav>
             <a href="https://www.linkedin.com/company/society-for-astrophysics-and-space-technology/posts/?feedView=all" class="contact-button" target="_blank">Contact</a>
@@ -38,15 +40,32 @@
     <section class="eventssec h-320 flex flex-col  items-center ">
 
         <div class=" h-18 w-200 rounded-3xl flex justify-evenly items-center" style="margin-top: 11%; background-color: rgb(255,255,255,0.08); ">
-            <button class="rounded w-30 h-10 cursor-pointer" onclick="filterEvents('all')">All Events</button>
-            <button class="rounded w-30 h-10 cursor-pointer" onclick="filterEvents('past')">Past Events</button>
-            <button class="rounded w-35 h-10 cursor-pointer" onclick="filterEvents('ongoing')">Ongoing Events</button>
-            <button class="rounded w-30 h-10 cursor-pointer" onclick="filterEvents('future')">Future Events</button>
+            <button class="rounded w-30 h-10 cursor-pointer opacity-80 hover:opacity-100" onclick="filterEvents('all')">All Events</button>
+            <button class="rounded w-30 h-10 cursor-pointer opacity-80 hover:opacity-100" onclick="filterEvents('past')">Past Events</button>
+            <button class="rounded w-35 h-10 cursor-pointer opacity-80 hover:opacity-100" onclick="filterEvents('ongoing')">Ongoing Events</button>
+            <button class="rounded w-30 h-10 cursor-pointer opacity-80 hover:opacity-100" onclick="filterEvents('future')">Future Events</button>
         </div>
 
 
         <div class="events">
-            <div class="card" data-date="2025-02-19">
+
+            <div class="card" data-date="2025-02-16">
+                <div class="card-content">
+                    <div class="alignerevent">
+                    <img src="assets/waterrocket.png" alt="WaterRocket" class="card-img">
+                    </div>
+
+                    <video class="card-video" loop muted>
+                        <source src="assets/waterrocketvid.mp4" type="video/mp4">
+                    </video>
+                    <div class="card-info">
+                        <h2>Water Rocket Launch</h2>
+                        <p>A thrilling competition where teams designed, built, and launched water-powered rockets, blending creativity with engineering.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-date="2024-12-12">
                 <div class="card-content">
                     <div class="alignerevent">
                     <img src="assets/bharatmp.jpeg" alt="BharatMP" class="card-img">
@@ -180,6 +199,22 @@
         }
 
         window.onload = () => filterEvents('all');
+    </script>
+    <script>
+        const navbar = document.querySelector('.header');
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY) {
+            navbar.style.transform = 'translateY(-200%)';
+        } else {
+
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScrollY = currentScrollY;
+        });
     </script>
     
 </body>

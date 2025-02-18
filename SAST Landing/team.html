@@ -31,6 +31,8 @@
                     <li><a href="./events.html">Events</a></li>
                     <li><a href="./projects.html">Projects</a></li>
                     <li><a href="team.html">Team</a></li>
+                    <li class="text-s"><a href="merch.html">Shop</a></li>
+
                 </ul>
             </nav>
   
@@ -84,3 +86,20 @@
             <div class="card w-10 h-80 border border-white-800"></div>
         </div>
     </section>
+
+    <script>
+        const navbar = document.querySelector('.header');
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY) {
+            navbar.style.transform = 'translateY(-200%)';
+        } else {
+
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScrollY = currentScrollY;
+        });
+      </script>
