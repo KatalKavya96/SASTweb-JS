@@ -30,13 +30,19 @@
 
 
     <!-- <div class="h-660 w-full absolute top-0 left-0 -z-10">
-        <img class="w-full h-full object-cover opacity-100" src="./assets/helm.jpg">
+        < class="w-full h-full  opacity-50" src="./assets/lashope.mp4">
     </div> -->
+
+    <div class="h-660 w-full absolute top-0 left-0 -z-10">
+        <video class="w-full h-full  opacity-70" autoplay loop muted>
+            <source src="assets/lashope.mp4">
+        </video>
+    </div>
 
     <header class="header">
         <div class="container header-content">
-            <a href="/" class="logo">
-                <img class="rounded" src="/SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60">
+            <a href="../index.html" class="logo">
+                <img class="rounded" src="../SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60">
             </a>
             
             <!-- Hamburger Button for Mobile -->
@@ -46,6 +52,7 @@
   
             <nav class="flex flex-col justify-evenly items-center">
                 <ul class="nav-links gap-20 flex justify-evenly items-center" style="margin-left: 210px;">
+
                     <li class="opacity-75 hover:opacity-100"><a href="#">MEN</a></li>
                     <li class="opacity-75 hover:opacity-100"><a href="#">WOMEN</a></li>
                     <li class="opacity-75 hover:opacity-100"><a href="#">ACCESSORIES</a></li>
@@ -53,6 +60,9 @@
                     <li><a href="/SAST Landing/events.html">Events</a></li>
                     <li><a href="./SAST Landing/projects.html">Projects</a></li>
                     <li><a href="./SAST Landing/team.html">Team</a></li> -->
+                    <li class="opacity-75 hover:opacity-100"><a href="index.html">MEN</a></li>
+                    <li class="opacity-75 hover:opacity-100"><a href="#space-service">WOMEN</a></li>
+                    <li class="opacity-75 hover:opacity-100"><a href="./SAST Landing/newsletter.html">ACCESSORIES</a></li>
                 </ul>
             </nav>
             <div class="flex justify-evenly items-center w-70 gap-10">
@@ -140,6 +150,7 @@
             </div>
         </div>
       </section>
+
  
 <div class="fixed bottom-5 right-5 flex flex-col items-end z-50">
 
@@ -366,6 +377,25 @@
   }
 </script>
 
+
+
+
+      <script>
+        const navbar = document.querySelector('.header');
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY) {
+            navbar.style.transform = 'translateY(-200%)';
+        } else {
+
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScrollY = currentScrollY;
+        });
+      </script>
 
 </body>
 </html>
