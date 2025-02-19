@@ -18,7 +18,7 @@
 
     <header class="header">
         <div class="container header-content">
-            <a href="/" class="logo">
+            <a href="../index.html" class="logo">
                 <img src="../SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60">
             </a>
             <nav class="main-nav">
@@ -30,6 +30,8 @@
                     <li><a href="events.html">Events</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="team.html">Team</a></li>
+                    <li class="text-s"><a href="merch.html">Shop</a></li>
+
                 </ul>
             </nav>
             <a href="https://www.linkedin.com/company/society-for-astrophysics-and-space-technology/posts/?feedView=all" class="contact-button" target="_blank">Contact</a>
@@ -122,6 +124,22 @@
 
         window.onload = () => filterEvents('all');
     </script>
+    <script>
+        const navbar = document.querySelector('.header');
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY) {
+            navbar.style.transform = 'translateY(-200%)';
+        } else {
+
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScrollY = currentScrollY;
+        });
+      </script>
     
 </body>
 </html>

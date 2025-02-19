@@ -19,8 +19,8 @@
 
     <header class="header">
       <div class="container header-content">
-          <a href="/" class="logo">
-              <img class="rounded" src="/SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60">
+          <a href="index.html" class="logo">
+              <img class="rounded" src="./SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60">
           </a>
           
           <!-- Hamburger Button for Mobile -->
@@ -37,6 +37,7 @@
                   <li><a href="/SAST Landing/events.html">Events</a></li>
                   <li><a href="./SAST Landing/projects.html">Projects</a></li>
                   <li><a href="./SAST Landing/team.html">Team</a></li>
+                  <li class="text-s"><a href="./SAST Landing/merch.html">Shop</a></li>
               </ul>
           </nav>
 
@@ -287,6 +288,24 @@
     }
     loader(); 
     </script>
+
+    <script>
+      const navbar = document.querySelector('.header');
+      let lastScrollY = window.scrollY;
+      window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+          navbar.style.transform = 'translateY(-200%)';
+      } else {
+
+          navbar.style.transform = 'translateY(0)';
+      }
+
+      lastScrollY = currentScrollY;
+      });
+    </script>
+    
 
 </body>
 </html>
