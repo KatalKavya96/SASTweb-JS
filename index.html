@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="SAST Landing/style.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     
+
 </head>
 <body>
+
+  <div class="loader">
+    <h1>Vision</h1>
+    <h1>Innovation</h1>
+    <h1>Collaboration</h1>
+  </div>
+
     <header class="header">
       <div class="container header-content">
           <a href="index.html" class="logo">
@@ -57,7 +65,7 @@
             <div class="video">
                 <video  id="myVideo" loop autoplay muted playsinline>
                     <source src="SAST Landing/assets/newmaoinsast.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    Your Browser does not support the video tag.
                 </video>
             </div>
         </section>
@@ -256,6 +264,7 @@
     </footer>
 
     <script src="SAST Landing/app.js" class="rounded"></script>
+
     <script>
           document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.querySelector(".menu-toggle");
@@ -265,8 +274,21 @@
             navLinks.classList.toggle("active");
         });
     });
-
+    
     </script>
+
+    <script>
+    // LOADER
+    function loader() {
+    var loader = document.querySelector(".loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+        loader.style.opacity = "1"
+    }, 4000)
+    }
+    loader(); 
+    </script>
+
     <script>
       const navbar = document.querySelector('.header');
       let lastScrollY = window.scrollY;
@@ -284,6 +306,7 @@
       });
     </script>
     
+
 </body>
 </html>
 
