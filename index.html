@@ -5,13 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAST</title>
     <link rel="stylesheet" href="SAST Landing/style.css">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
 
 </head>
 <body>
 
-  <div class="loader">
+  <!-- <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <img class="rounded" src="./SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60" style="filter: invert(1);">
+      </a>
+      
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#space-service">SAST Services</a></li>
+          <li><a href="./SAST Landing/newsletter.html">Newsletter</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="/SAST Landing/events.html">Events</a></li>
+          <li><a href="./SAST Landing/projects.html">Projects</a></li>
+          <li><a href="./SAST Landing/team.html">Team</a></li>
+          <li class="text-s"><a href="./SAST Landing/merch.html">Shop</a></li>
+        </ul>
+      </nav>
+      
+      <a href="https://forms.gle/LtxwMT4r8byMRg8CA" class="join-button" target="_blank">JOIN NOW</a>
+      
+      
+      <button class="menu-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
+        &#9776;
+      </button>
+    </div>
+  </header>
+  
+  <script>
+    function toggleMenu() {
+      document.querySelector(".main-nav").classList.toggle("active");
+    }
+  </script> -->
+  
+   <div class="loader">
     <h1>Vision</h1>
     <h1>Innovation</h1>
     <h1>Collaboration</h1>
@@ -23,21 +57,18 @@
               <img class="rounded" src="./SAST Landing/assets/SAST.png" alt="Logo" width="60" height="60">
           </a>
           
-          <!-- Hamburger Button for Mobile -->
-          <!-- <button class="menu-toggle" aria-label="Toggle Menu">
-              ☰
-          </button> -->
+         
 
           <nav class="main-nav">
               <ul class="nav-links">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="#space-service">SAST Services</a></li>
+                  <!-- <li><a href="#space-service">SAST Services</a></li> -->
                   <li><a href="./SAST Landing/newsletter.html">Newsletter</a></li>
-                  <li><a href="#products">Products</a></li>
+                  <!-- <li><a href="#products">Products</a></li> -->
                   <li><a href="/SAST Landing/events.html">Events</a></li>
                   <li><a href="./SAST Landing/projects.html">Projects</a></li>
-                  <li><a href="./SAST Landing/team.html">Team</a></li>
-                  <li class="text-s"><a href="./SAST Landing/merch.html">Shop</a></li>
+                  <!-- <li><a href="./SAST Landing/team.html">Team</a></li>
+                  <li class="text-s"><a href="./SAST Landing/merch.html">Shop</a></li> -->
               </ul>
           </nav>
 
@@ -161,7 +192,24 @@
                 <span class="arrow">→</span>
               </a>
             </div>
+            
           </section>
+          <section class="w-full h-full flex justify-center items-center" style="margin-top: 80px; margin-bottom: 80px;">
+            <div class="h-150 w-280 flex justify-center items-center rounded">
+              <iframe 
+                class="h-145 w-275 rounded"
+                src="https://www.youtube.com/embed/HfuWuKACU8Q?autoplay=1&controls=1&mute=1"
+                title="SAST Club Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer">
+            </iframe>
+            
+            </div>
+          </section>
+
           <hr class="vbar">
 
           <div class="w-full h-120 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('/SAST Landing/assets/helm.jpg');">
@@ -209,11 +257,32 @@
         <div class="h-full w-80 ">
           <div class="h-62 w-full flex justify-center items-center"><img class="h-50 w-60 opacity-70" src="./SAST Landing/assets/SAST.png"></div>
           
-          <div class="h-18 w-full flex justify-evenly items-center" style="border-top: 1px solid rgb(255,255,255,0.3);">
-            <div><svg viewBox="0 0 23 23" focusable="false" class="chakra-icon css-20vzky"><path d="M21.537 6.383a2.636 2.636 0 0 0-1.842-1.914C18.044 4 11.518 4 11.518 4s-6.564 0-8.215.469a2.636 2.636 0 0 0-1.841 1.914C1 8.023 1 11.539 1 11.539s0 3.477.462 5.156c.23.938.959 1.64 1.843 1.875 1.65.43 8.214.43 8.214.43s6.526 0 8.176-.43a2.583 2.583 0 0 0 1.843-1.875c.462-1.68.462-5.156.462-5.156s0-3.516-.462-5.156Zm-12.169 8.32V8.375l5.451 3.164-5.45 3.164h-.001Z" fill-rule="nonzero"></path></svg></div>
-            <div><svg viewBox="0 0 23 23" focusable="false" class="chakra-icon css-20vzky"><path d="M11.518 7.118a4.365 4.365 0 0 0-4.363 4.364 4.34 4.34 0 0 0 4.363 4.363 4.365 4.365 0 0 0 4.364-4.363c0-2.39-1.973-4.364-4.364-4.364Zm0 7.21a2.843 2.843 0 0 1-2.846-2.846c0-1.557 1.253-2.808 2.846-2.808a2.8 2.8 0 0 1 2.808 2.808c0 1.593-1.251 2.846-2.808 2.846Zm5.54-7.362a1.02 1.02 0 0 0-1.024-1.025 1.02 1.02 0 0 0-1.024 1.025 1.02 1.02 0 0 0 1.024 1.024 1.02 1.02 0 0 0 1.025-1.024Zm2.885 1.024c-.076-1.366-.379-2.58-1.366-3.567-.987-.985-2.201-1.29-3.567-1.366-1.405-.076-5.616-.076-7.02 0-1.367.076-2.543.379-3.568 1.366-.986.987-1.29 2.201-1.365 3.567-.076 1.405-.076 5.617 0 7.02.076 1.367.379 2.543 1.366 3.568 1.024.986 2.2 1.29 3.566 1.365 1.405.076 5.616.076 7.021 0 1.366-.076 2.58-.379 3.567-1.366.986-1.025 1.29-2.201 1.366-3.567.076-1.404.076-5.616 0-7.02Zm-1.821 8.5c-.267.76-.874 1.329-1.594 1.633-1.14.455-3.795.342-5.01.342-1.253 0-3.908.113-5.009-.342a2.878 2.878 0 0 1-1.632-1.632c-.455-1.101-.342-3.757-.342-5.01 0-1.214-.113-3.87.342-5.008A2.927 2.927 0 0 1 6.51 4.879c1.101-.456 3.757-.342 5.01-.342 1.214 0 3.87-.114 5.008.341.721.267 1.29.874 1.594 1.594.456 1.14.342 3.795.342 5.01 0 1.253.114 3.908-.341 5.009Z" fill-rule="nonzero"></path></svg></div>
-            <div><svg viewBox="0 0 23 23" focusable="false" class="chakra-icon css-20vzky"><path d="M21 11.558c0-2.535-1-4.966-2.782-6.759A9.469 9.469 0 0 0 11.5 2a9.469 9.469 0 0 0-6.718 2.799A9.586 9.586 0 0 0 2 11.559c0 4.778 3.448 8.747 8.007 9.441v-6.667H7.593v-2.775h2.413V9.476c0-2.388 1.418-3.737 3.562-3.737 1.073 0 2.146.193 2.146.193v2.35h-1.188c-1.187 0-1.57.733-1.57 1.503v1.773h2.643l-.422 2.776h-2.222V21C17.514 20.306 21 16.337 21 11.558Z" fill-rule="evenodd"></path></svg></div>
-            <div><svg viewBox="0 0 1200 1227" focusable="false" class="chakra-icon css-1m5ng7y"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill-rule="evenodd"></path></svg></div>
+          <div class="h-[72px] w-full flex justify-evenly items-center" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
+  
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 23 23" focusable="false" class="chakra-icon css-20vzky" aria-hidden="true">
+                <path d="M21.537 6.383a2.636 2.636 0 0 0-1.842-1.914C18.044 4 11.518 4 11.518 4s-6.564 0-8.215.469a2.636 2.636 0 0 0-1.841 1.914C1 8.023 1 11.539 1 11.539s0 3.477.462 5.156c.23.938.959 1.64 1.843 1.875 1.65.43 8.214.43 8.214.43s6.526 0 8.176-.43a2.583 2.583 0 0 0 1.843-1.875c.462-1.68.462-5.156.462-5.156s0-3.516-.462-5.156Zm-12.169 8.32V8.375l5.451 3.164-5.45 3.164h-.001Z" fill-rule="nonzero"></path>
+              </svg>
+            </a>
+          
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 23 23" focusable="false" class="chakra-icon css-20vzky" aria-hidden="true">
+                <path d="M11.518 7.118a4.365 4.365 0 0 0-4.363 4.364 4.34 4.34 0 0 0 4.363 4.363 4.365 4.365 0 0 0 4.364-4.363c0-2.39-1.973-4.364-4.364-4.364Zm0 7.21a2.843 2.843 0 0 1-2.846-2.846c0-1.557 1.253-2.808 2.846-2.808a2.8 2.8 0 0 1 2.808 2.808c0 1.593-1.251 2.846-2.808 2.846Zm5.54-7.362a1.02 1.02 0 0 0-1.024-1.025 1.02 1.02 0 0 0-1.024 1.025 1.02 1.02 0 0 0 1.024 1.024 1.02 1.02 0 0 0 1.025-1.024Zm2.885 1.024c-.076-1.366-.379-2.58-1.366-3.567-.987-.985-2.201-1.29-3.567-1.366-1.405-.076-5.616-.076-7.02 0-1.367.076-2.543.379-3.568 1.366-.986.987-1.29 2.201-1.365 3.567-.076 1.405-.076 5.617 0 7.02.076 1.367.379 2.543 1.366 3.568 1.024.986 2.2 1.29 3.566 1.365 1.405.076 5.616.076 7.021 0 1.366-.076 2.58-.379 3.567-1.366.986-1.025 1.29-2.201 1.366-3.567.076-1.404.076-5.616 0-7.02Zm-1.821 8.5c-.267.76-.874 1.329-1.594 1.633-1.14.455-3.795.342-5.01.342-1.253 0-3.908.113-5.009-.342a2.878 2.878 0 0 1-1.632-1.632c-.455-1.101-.342-3.757-.342-5.01 0-1.214-.113-3.87.342-5.008A2.927 2.927 0 0 1 6.51 4.879c1.101-.456 3.757-.342 5.01-.342 1.214 0 3.87-.114 5.008.341.721.267 1.29.874 1.594 1.594.456 1.14.342 3.795.342 5.01 0 1.253.114 3.908-.341 5.009Z" fill-rule="nonzero"></path>
+              </svg>
+            </a>
+          
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 23 23" focusable="false" class="chakra-icon css-20vzky" aria-hidden="true">
+                <path d="M21 11.558c0-2.535-1-4.966-2.782-6.759A9.469 9.469 0 0 0 11.5 2a9.469 9.469 0 0 0-6.718 2.799A9.586 9.586 0 0 0 2 11.559c0 4.778 3.448 8.747 8.007 9.441v-6.667H7.593v-2.775h2.413V9.476c0-2.388 1.418-3.737 3.562-3.737 1.073 0 2.146.193 2.146.193v2.35h-1.188c-1.187 0-1.57.733-1.57 1.503v1.773h2.643l-.422 2.776h-2.222V21C17.514 20.306 21 16.337 21 11.558Z" fill-rule="evenodd"></path>
+              </svg>
+            </a>
+          
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+              <svg viewBox="0 0 1200 1227" focusable="false" class="chakra-icon css-1m5ng7y" aria-hidden="true">
+                <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill-rule="evenodd"></path>
+              </svg>
+            </a>
+          
           </div>
         </div>
 

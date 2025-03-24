@@ -902,7 +902,7 @@ footer {
 .loader h1{
   z-index: 10000;
   font-size: 8vw;
-  color: rgb(255, 255, 255);
+  color: hsl(215, 100%, 70%);
   position: absolute;
   opacity: 0;
   animation-name: lulu;
